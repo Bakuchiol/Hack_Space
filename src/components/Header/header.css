@@ -1,5 +1,56 @@
 /* header */
 #headerWrapper {
-    border: solid violet;
+    /* border: solid violet; */
     height: 160px;
-  }
+    padding-top: 18px;
+}
+
+/* header */
+.nasaName {
+  /* border: solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.nasaName p {
+  font-size: 20px;
+}
+.verified {
+  width: 12px;
+}
+/* status */
+.logo {
+  margin-left: 5px;
+  /* border: solid wheat; */
+}
+#status {
+  /* border: solid red; */
+  display: flex;
+}
+#status p {
+  color: #fff;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightDiv {
+  color: #fff;
+  display: flex;
+  margin-left: 50px;
+  align-items: center;
+}
+.numbers {
+  margin-right: 10px;
+  text-align: center;
+}
+.numbers p{
+  font-size: 15px;
+}
+
+.story {
+  color: #fff;
+  margin-left: 15px;
+}
