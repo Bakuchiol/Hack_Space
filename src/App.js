@@ -1,6 +1,8 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import key from './API/key'
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 // import Nasa from './components/Nasa';
 
 function App() {
@@ -23,17 +25,17 @@ function App() {
 
   return (
     <div className="App">
-      {/* <h1>Hello World</h1> */}
-      {/* <Nasa data={data}/> */}
-
-
-      {imgData.map((img,i) => {
-        return (
-          <div key={i}>
-            <img src={img.url} alt=''/>
-          </div>
-        )
-      })}
+      <Header />
+      <div className='imageWrapper'>
+        {imgData.map((img,i) => {
+          return (
+                <div key={i} className='nasaImages'>
+                  <img src={img.url} alt='nasa images' className='imageSize'/>
+                </div>
+          )
+        })}
+      </div>
+      <Footer />
 
         {/* <img src={imgData.url} alt=""/>
         <h1>{imgData.title}</h1>
